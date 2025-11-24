@@ -9,7 +9,7 @@ public class Demo {
 			Class<?> clzz = Class.forName("_7_Reflection_App.beans.User");
 			Object object=clzz.newInstance();
 			Field agefield=clzz.getDeclaredField("age");
-			agefield.setAccessible(false);
+			agefield.setAccessible(true);
 			agefield.set(object,20);
 			System.out.println(agefield.get(object));
 			
